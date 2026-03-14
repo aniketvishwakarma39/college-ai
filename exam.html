@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam Monitoring System</title>
+
+<style>
+
+body{
+background:#0f172a;
+color:white;
+font-family:Segoe UI;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+text-align:center;
+background:#1e293b;
+padding:40px;
+border-radius:12px;
+width:420px;
+}
+
+.camera{
+height:250px;
+background:#020617;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+button{
+padding:10px 20px;
+border:none;
+background:cyan;
+color:black;
+border-radius:6px;
+cursor:pointer;
+margin:5px;
+font-weight:bold;
+}
+
+.status{
+margin-top:15px;
+font-size:18px;
+}
+
+.dashboard-btn{
+margin-top:20px;
+display:inline-block;
+background:#22c55e;
+padding:10px 20px;
+border-radius:6px;
+color:black;
+font-weight:bold;
+text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Exam Monitoring</h2>
+
+<div class="camera">
+Live Camera Feed
+</div>
+
+<button>Open Camera</button>
+<button>Start Monitoring</button>
+<button>Stop Monitoring</button>
+
+<div class="status">
+Status: Monitoring Student
+</div>
+
+<p>If student looks away for 3 seconds → Screenshot captured</p>
+
+<a href="exss.html" class="dashboard-btn">
+Open Dashboard
+</a>
+
+</div>
+
+</body>
+</html>

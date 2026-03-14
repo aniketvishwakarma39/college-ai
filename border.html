@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Border Line Security</title>
+
+<style>
+
+body{
+background:#0f172a;
+color:white;
+font-family:Segoe UI;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+text-align:center;
+background:#1e293b;
+padding:40px;
+border-radius:12px;
+width:420px;
+}
+
+.camera{
+height:260px;
+background:#020617;
+border-radius:10px;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-bottom:20px;
+}
+
+/* BORDER LINES */
+
+.line{
+position:absolute;
+width:100%;
+height:3px;
+background:red;
+}
+
+.line1{
+top:80px;
+}
+
+.line2{
+bottom:80px;
+}
+
+button{
+padding:10px 18px;
+border:none;
+background:cyan;
+color:black;
+border-radius:6px;
+cursor:pointer;
+margin:5px;
+font-weight:bold;
+}
+
+.status{
+margin-top:15px;
+font-size:18px;
+}
+
+.dashboard-btn{
+margin-top:20px;
+display:inline-block;
+background:#22c55e;
+padding:10px 20px;
+border-radius:6px;
+color:black;
+font-weight:bold;
+text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Border Line Monitoring</h2>
+
+<div class="camera">
+
+Camera Feed
+
+<div class="line line1"></div>
+<div class="line line2"></div>
+
+</div>
+
+<button>Open Camera</button>
+<button>Start Monitoring</button>
+<button>Stop Monitoring</button>
+
+<div class="status">
+Status: Monitoring Border
+</div>
+
+<p>If someone crosses the line → Alarm + Screenshot</p>
+
+<a href="borderdashboard.html" class="dashboard-btn">
+Open Dashboard
+</a>
+
+</div>
+
+</body>
+</html>

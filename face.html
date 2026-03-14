@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Face Recognition Attendance System</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+display:flex;
+background:#0f172a;
+color:white;
+min-height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:230px;
+background:#020617;
+padding:25px 20px;
+display:flex;
+flex-direction:column;
+gap:18px;
+position:fixed;
+top:0;
+left:0;
+height: 100vh;
+overflow-y: auto;
+}
+
+.sidebar h2{
+text-align:center;
+margin-bottom:20px;
+color:cyan;
+}
+
+.sidebar a{
+text-decoration:none;
+color:white;
+padding:10px;
+border-radius:6px;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:cyan;
+color:black;
+}
+
+/* MAIN */
+
+.main{
+flex:1;
+padding:30px;
+margin-left: 230px;
+height: 100vh;
+overflow-y: auto;
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-bottom:35px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.card h3{
+font-size:18px;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:26px;
+color:cyan;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#1e293b;
+border-radius:10px;
+overflow:hidden;
+margin-top:10px;
+}
+
+table th,table td{
+padding:12px;
+border-bottom:1px solid #334155;
+text-align:center;
+}
+
+table th{
+background:#020617;
+}
+
+/* BUTTON */
+
+.btn{
+background:cyan;
+color:black;
+border:none;
+padding:8px 14px;
+border-radius:6px;
+cursor:pointer;
+margin:3px;
+}
+
+/* CAMERA BOX */
+
+.camera-box{
+background:#1e293b;
+height:300px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:10px;
+margin-bottom:15px;
+font-size:18px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Attendance AI</h2>
+
+<a href="#">Dashboard</a>
+<a href="#">Students</a>
+<a href="#">Subjects</a>
+<a href="#">Take Attendance</a>
+<a href="#">Attendance Records</a>
+<a href="#">Settings</a>
+<a href="#">Logout</a>
+
+</div>
+
+<div class="main">
+
+<h1>Dashboard</h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Students</h3>
+<p>120</p>
+</div>
+
+<div class="card">
+<h3>Present Today</h3>
+<p>95</p>
+</div>
+
+<div class="card">
+<h3>Absent Today</h3>
+<p>25</p>
+</div>
+
+<div class="card">
+<h3>Total Classes</h3>
+<p>8</p>
+</div>
+
+</div>
+
+<h1>Student Management</h1>
+
+<button class="btn">Add Student</button>
+
+<table>
+
+<tr>
+<th>Photo</th>
+<th>Name</th>
+<th>Roll</th>
+<th>Department</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>📷</td>
+<td>Aniket</td>
+<td>102</td>
+<td>CSE</td>
+<td>
+<button class="btn">View</button>
+<button class="btn">Edit</button>
+<button class="btn">Delete</button>
+</td>
+</tr>
+
+</table>
+
+<h1 style="margin-top:40px">Take Attendance</h1>
+
+<div class="camera-box">
+Camera Feed / Detecting Face
+</div>
+
+<button class="btn">Open Camera</button>
+<button class="btn">Start Attendance</button>
+<button class="btn">Stop Attendance</button>
+
+<p style="margin-top:10px">
+Name: Aniket <br>
+Roll: 102 <br>
+Status: Present
+</p>
+
+<h1 style="margin-top:40px">Attendance Records</h1>
+
+<table>
+
+<tr>
+<th>Name</th>
+<th>Roll</th>
+<th>Subject</th>
+<th>Date</th>
+<th>Time</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Aniket</td>
+<td>102</td>
+<td>AI</td>
+<td>25-03-2026</td>
+<td>10:05</td>
+<td>Present</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>

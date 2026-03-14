@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheating Detection Dashboard</title>
+
+<style>
+
+body{
+background:#0f172a;
+font-family:Segoe UI;
+color:white;
+padding:40px;
+}
+
+h1{
+margin-bottom:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+img{
+width:100%;
+border-radius:8px;
+margin-top:10px;
+}
+
+button{
+margin-top:10px;
+padding:8px 14px;
+border:none;
+background:#ef4444;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.status{
+color:#facc15;
+font-size:18px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Exam Cheating Detection Dashboard</h1>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Student: Aniket</h3>
+
+<div class="status">
+Suspicious Movement Detected
+</div>
+
+<img src="cheat1.jpg">
+
+<p>Time: 10:22 AM</p>
+
+<button>Delete Screenshot</button>
+
+</div>
+
+<div class="card">
+
+<h3>Student: Rahul</h3>
+
+<div class="status">
+Looking Away Detected
+</div>
+
+<img src="cheat2.jpg">
+
+<p>Time: 10:30 AM</p>
+
+<button>Delete Screenshot</button>
+
+</div>
+
+</div>
+
+</body>
+</html>

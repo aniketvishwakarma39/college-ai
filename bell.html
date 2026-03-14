@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher Presence Check</title>
+
+<style>
+
+body{
+background:#0f172a;
+color:white;
+font-family:Segoe UI;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+text-align:center;
+background:#1e293b;
+padding:40px;
+border-radius:12px;
+width:420px;
+}
+
+.camera{
+height:250px;
+background:#020617;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+button{
+padding:10px 20px;
+border:none;
+background:cyan;
+color:black;
+border-radius:6px;
+cursor:pointer;
+margin:5px;
+font-weight:bold;
+}
+
+a{
+text-decoration:none;
+}
+
+.status{
+margin-top:15px;
+font-size:18px;
+}
+
+.dashboard-btn{
+margin-top:20px;
+display:inline-block;
+background:#22c55e;
+padding:10px 20px;
+border-radius:6px;
+color:black;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Teacher Presence Check</h2>
+
+<div class="camera">
+Camera Feed
+</div>
+
+<button>Open Camera</button>
+<button>Scan Face</button>
+
+<div class="status">
+Status: Waiting for Teacher
+</div>
+
+<a href="dashboard.html" class="dashboard-btn">
+Go to Dashboard
+</a>
+
+</div>
+
+</body>
+</html>
